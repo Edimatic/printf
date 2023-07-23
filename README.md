@@ -1,14 +1,25 @@
-0x11. C - printf team project
+ALX Group Project on printf function, July 2023 
 
-Group Project:                                                                      
+Description:
+
+The printf function sends formatted output to stdout. A custom _printf() function for learning purpose. by - Eddi Udofia, and - Imad Balaallam.
+
+_printf() function format string is a character string, beginning and ending in its initial shift state, if any. These arguments are placed using the percentage '%' operator 
+
+Compilation
+The code on each file will be compiled using this:
+
+*$ gcc -Wall -Werror -Wextra -pedantic .c
+
+As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
+
+The main files will include your main header file (holberton.h): #include holberton.                                                
                                                                                     
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
  a Spur for life                                                                    
 Write a function that produces output according to a format.                        
-                                                                                    
-                                                                                    
-1. Education is when you read the fine print. Experience is what you get if you don'
-t                                                                                   
+                                                                                                                                                                       
+1. Education is when you read the fine print. Experience is what you get if you don't                                                                                   
 Handle the following conversion specifiers:
 
 2. With a face like mine, I do better in print                                      
@@ -61,3 +72,6 @@ Handle the following custom conversion specifier:
 15. *                                                                               
 All the above options work well together. 
 
+
+AUTHORS
+Eddi Udofia, Imad Balaallam
