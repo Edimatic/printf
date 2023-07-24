@@ -1,24 +1,22 @@
-#ifndef MAIN_HEADER_FILE
-#define MAIN_HEADER_FILE 
-#include <stdarg.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-int _putchar(char c);
-void _puts(char *str);
-int _strlen(char *s);
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
+#include <limits.h>
+
+int _putchar(char character);
+int printf_char(va_list args, int printed);
+int printf_string(va_list args, int printed);
+int printf_integer(va_list args, int printed);
+int selector(const char *format, va_list args, int printed);
+int printf_binary(unsigned int num, int printed);
 int _printf(const char *format, ...);
-char *convert_to(char representation[], unsigned int num, int base);
-int function_manager(char c, va_list arg);
-int _switch(char c, va_list arg);
-int print_character(va_list arg);
-int print_sign(va_list arg, int base);
-int print_unsign(va_list arg, int base);
-int print_string(va_list arg);
-int print_ptr(va_list arg);
-int print_rot13(va_list arg);
-int print_rev(va_list arg);
-int print_base16_upper_lower(va_list arg, char *representation);
-int loop_format(va_list arg, const char *string);
-int call_function_manager(char aux, va_list arg);
-int check_percent(int *flag, char aux);
+int _x(unsigned int num, int printed, int uppercase);
+int printf_octal(unsigned int num, int printed);
+int printf_unsigned(unsigned int num, int printed);
+int printf_reverse(va_list args, int printed);
+int printf_pointer(va_list args, int printed);
 
 #endif
